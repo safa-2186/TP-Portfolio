@@ -1,11 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP-Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+        --font-urbanist: "Urbanist", sans-serif;
+      }
+    </style>
 </head>
-<body>
-    
+
+<body class="min-h-screen font-urbanist bg-white">
+
+    <div class="mx-auto w-[1200px] pt-5">
+
+
+        <nav class="flex items-center justify-between rounded-full bg-black px-[10px] text-white mt-10 ">
+            <ul class="font-[20px] flex justify-between gap-[54px] pl-[50px]">
+                <li><a href="#home" class="font-normal leading-none"></a>Home</li>
+                <li><a href="about" class="font-normal leading-none"></a>About</li>
+                <li><a href="service" class="font-normal leading-none">Service</a></li>
+            </ul>
+
+            <div class="px-10 py-5 flex items-center gap-[10px]">
+                <img src="./images/Frame 55.svg" class="w-[46px] h-[46px]">
+                <div class="flex gap-[3px]">JCREA</div>
+
+            </div>
+
+            <ul class="font-[20px] flex items-center gap-[54px] pr-[50px]">
+                <li><a href="#resume" class="font-normal leading-none"></a>Resume</li>
+                <li><a href="#project" class="font-normal leading-none"></a>Project</li>
+                <li><a href="#contact" class="font-normal leading-none">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="relative flex flex-col items-center h-[800px] overflow-hidden pt-7 text-center font-urbanist">
+            <span
+                class="inline-block rounded-full border-[1.5px] border-current px-4 py-1 text-xl font-medium mt-[56px]">Hello!</span>
+
+            <h1 class="relative z-10 mt-3 text-8xl font-medium leading-[1.08] tracking-tight">
+                I’m <span class="font-semibold text-[#FD853A]">Jenny</span>,<br>Product Designer
+            </h1>
+
+            <blockquote
+                class="absolute left-0 top-72 z-[2] w-52 text-left text-[15px] font-medium leading-snug text-slate-700">
+                <span class="mb-2 block font-serif text-5xl leading-[.8] text-neutral-900">“</span>
+                Jenny’s exceptional product design ensure our website’s success. Highly recommended
+            </blockquote>
+
+            <div class="absolute right-0 top-72 z-[2] text-right">
+                <div class="text-[22px] tracking-widest text-[#FD853A]">★★★★★</div>
+                <strong class="block text-3xl font-semibold leading-tight">10 Years</strong>
+                <span class="text-sm">Experience</span>
+            </div>
+
+            <div
+                class="absolute -bottom-[380px] left-1/2 h-[810px] w-[810px] -translate-x-1/2 rounded-full bg-[#FEB273]">
+            </div>
+            <img src="./images/young-woman.svg" class="absolute bottom-0 left-1/2 z-20 h-[630px] -translate-x-1/2">
+
+            <div
+                class="absolute bottom-[50px] left-1/2 z-30 flex -translate-x-1/2 gap-1.5 whitespace-nowrap rounded-full border border-white/50 bg-white/35 p-1.5 backdrop-blur-md">
+                <a href="#project"
+                    class="rounded-full bg-[#FD853A] px-8 py-3.5 text-xl font-medium text-white">Portfolio ↗</a>
+                <a href="#contact" class="rounded-full px-8 py-3.5 text-xl text-white">Hire me</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="relative h-[878px] overflow-hidden w-full bg-[url('./images/services-bg.jpg')] bg-cover bg-center text-white rounded-[50px]">
+        <div class="mx-auto w-[1200px] py-24">
+
+            <div class="flex items-start justify-between">
+                <h2 class="text-5xl font-semibold">
+                    My <span class="text-[#FD853A]">Services</span>
+                </h2>
+                <p class="w-[400px] text-sm leading-snug">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
+                    vulputate, bibendum sodales
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <section class="w-full bg-white py-20 font-urbanist text-[#2C3A4F]">
+        <div class="mx-auto w-[1200px]">
+
+            <h2 class="mb-16 text-center text-5xl font-semibold">
+                My <span class="text-[#FD853A]">Work Experience</span>
+            </h2>
+
+
+            <div class="relative grid grid-cols-[1fr_40px_1fr] gap-x-24 pb-16">
+
+                <span
+                    class="absolute bottom-0 left-1/2 top-10 -translate-x-1/2 border-l-2 border-dashed border-slate-700"></span>
+
+                <div>
+                    <h3 class="text-2xl font-semibold">Cognizant, Mumbai</h3>
+                    <p class="mt-1 text-sm text-slate-400">Sep 2016 - July 2020</p>
+                </div>
+
+                <span
+                    class="grid h-10 w-10 place-items-center rounded-full border border-dashed border-slate-700 bg-white">
+                    <span class="h-5 w-5 rounded-full bg-[#FD853A]"></span>
+                </span>
+
+                <div>
+                    <h3 class="text-2xl font-semibold">Experience Designer</h3>
+                    <p class="mt-2 w-[300px] text-xs font-medium leading-snug text-slate-400">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
+                        vulputate, bibendum sodales
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative grid grid-cols-[1fr_40px_1fr] gap-x-24 pb-16">
+                <span
+                    class="absolute bottom-0 left-1/2 top-10 -translate-x-1/2 border-l-2 border-dashed border-slate-700"></span>
+
+                <div>
+                    <h3 class="text-2xl font-semibold">Sugee Pvt limited, Mumbai</h3>
+                    <p class="mt-1 text-sm text-slate-400">Sep 2020 - July 2023</p>
+                </div>
+
+                <span
+                    class="grid h-10 w-10 place-items-center rounded-full border border-dashed border-slate-700 bg-white">
+                    <span class="h-5 w-5 rounded-full bg-[#1B2433]"></span>
+                </span>
+
+                <div>
+                    <h3 class="text-2xl font-semibold">UI/UX Designer</h3>
+                    <p class="mt-2 w-[300px] text-xs font-medium leading-snug text-slate-400">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
+                        vulputate, bibendum sodales
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="relative grid grid-cols-[1fr_40px_1fr] gap-x-24">
+                <div>
+                    <h3 class="text-2xl font-semibold">Cinetstox, Mumbai</h3>
+                    <p class="mt-1 text-sm text-slate-400">Sep 2023</p>
+                </div>
+
+                <span
+                    class="grid h-10 w-10 place-items-center rounded-full border border-dashed border-slate-700 bg-white">
+                    <span class="h-5 w-5 rounded-full bg-[#FD853A]"></span>
+                </span>
+
+                <div>
+                    <h3 class="text-2xl font-semibold">Lead UX Designer</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section
+        class="flex h-[806px] w-full flex-col gap-24 rounded-[50px] bg-[#F3F5F9] px-[71px] py-[122px] font-urbanist text-[#2C3A4F]">
+
+        <div class="mx-auto flex w-[1298px] items-center">
+
+            <img src=" ./images/Mask group.svg" class="h-[600px] w-[603px] shrink-0">
+
+
+            <div class="w-[520px]">
+                <h2 class="text-5xl font-semibold">Why <span class="text-[#FD853A]">Hire me</span>?</h2>
+
+                <p class="mt-10 w-[400px] text-sm leading-relaxed text-slate-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
+                    vulputate, bibendum sodales
+                </p>
+
+                <div class="mt-8 grid grid-cols-2 gap-x-10">
+                    <div>
+                        <strong class="block text-3xl font-semibold">450+</strong>
+                        <span class="text-sm text-slate-500">Project Completed</span>
+                    </div>
+                    <div>
+                        <strong class="block text-3xl font-semibold">450+</strong>
+                        <span class="text-sm text-slate-500">Project Completed</span>
+                    </div>
+                </div>
+
+                <a href="#contact"
+                    class="mt-10 inline-block rounded-3xl border border-slate-500 px-14 py-6 text-2xl font-semibold text-neutral-900 hover:bg-white">
+                    Hire me
+                </a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
 </body>
+
 </html>
